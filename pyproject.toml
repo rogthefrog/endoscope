@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "endoscope"
+version = "0.1.0"
+description = "Watch local variables for rebinds without adding logging or asserts inside the function."
+authors = ["rogthefrog <roger.billerey.mosier@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "endoscope", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
